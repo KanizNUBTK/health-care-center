@@ -9,8 +9,8 @@ const Service = (props) => {
             <img className="img" src={img} alt="" />
         </div>
         <div className="details-secsion">
-           <h2>Service name:{name}</h2>
-           <p>Service description:{description.slice(0,150)}...</p>
+           <h2>Service name: {name}</h2>
+           <p>Service description: {description.slice(0,150)}...</p>
            <button className="details-btn">Show details</button>
         </div>
         </div>

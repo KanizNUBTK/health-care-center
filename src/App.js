@@ -6,6 +6,7 @@ import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer';
 import NotFound from './component/NotFound/NotFound';
 import ServiceDetails from './component/ServiceDetails/ServiceDetails';
+import OverView from './component/OverView/OverView';
 function App() {
   return (
     <div>
@@ -23,6 +24,9 @@ function App() {
          </Route>
          <Route exact path="/sevicesDetails">
            <ServiceDetails></ServiceDetails>
+         </Route>
+         <Route exact path="/overView">
+           <OverView></OverView>
          </Route>
          <Route exact path ="*">
            <NotFound></NotFound>

@@ -1,11 +1,13 @@
 import React from 'react';
 import './Footer.css';
+import logo from '../../image/logo.jpg';
 
 const Footer = () => {
     return (
         <div className="footer">
             <div>
-                <h1>Central Hospital Khulna</h1>
+                <h2>Central Hospital Khulna</h2>
+                <img className="logo" src={logo} alt="" />
             </div>
             <div>
                 <ul>

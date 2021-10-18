@@ -13,7 +13,7 @@ import doc9 from '../../image/Dr.-Myles.-B.-Abbot.png';
 const DoctoresDetails = () => {
     return (
         <>
-            <h1>Meet our Doctors</h1>
+            <h1 className="meet-doctors">Meet our Doctors</h1>
             <div className="doctors-details">
                 <div className="single-details">
                    <div>

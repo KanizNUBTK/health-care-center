@@ -12,7 +12,7 @@ const ServiceDetails = () => {
     },[])
     return (
         <div>
-           <h2>Our Services</h2> 
+           <h2 className="service-header-text">Our Services</h2> 
            <div>
            {
                details.map(detail=><ViewService
