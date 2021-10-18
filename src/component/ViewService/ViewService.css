@@ -1,0 +1,21 @@
+.details{
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 2px 20px 10px 1px rgba(87, 80, 80, 0.2);
+}
+.details-img{
+    width: 500px;
+    height: 400px;
+}
+.data-secsion{
+    margin-left: 40px;
+    text-align: justify;
+    
+}
+.data-secsion h3{
+    font-size: 34px;
+}
+span{
+    font-weight: bold;
+}

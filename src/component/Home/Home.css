@@ -1,0 +1,13 @@
+.banner-img{
+    width: 100%;
+    height: 400px;
+}
+.first-part{
+    padding: 2% 10%;
+    text-align: center;
+}
+.first-part h2{
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(75, 72, 72);
+}

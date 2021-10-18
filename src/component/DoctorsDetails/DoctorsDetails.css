@@ -1,0 +1,8 @@
+.doctors-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.single-details img{
+    width: 200px;
+    height: 200px;
+}

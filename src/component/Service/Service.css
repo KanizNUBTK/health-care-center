@@ -1,0 +1,24 @@
+.img{
+    width: 100%;
+    height: 200px;
+}
+.service-part{
+    width: 400px;
+    height: 450px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 20px 10px 1px rgba(87, 80, 80, 0.2);
+}
+.details-secsion{
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.2;
+}
+.details-btn{
+    background-color: rgb(145, 145, 226);
+    border: none;
+    padding:10px 30px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
