@@ -9,3 +9,8 @@
     box-shadow: 2px 2px 2px 4px rgba(87, 80, 80, 0.2);
     border-radius: 20px;
 }
+@media only screen and (max-width: 600px) {
+    .service-header-text{
+        width: 330px;
+    }
+}

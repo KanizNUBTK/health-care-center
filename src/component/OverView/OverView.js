@@ -17,10 +17,10 @@ const OverView = () => {
             <div className="inner-view">
                 <div className="single-view">
                     <div><img src={img1} alt="" /></div>
-                    <div><h3>reception</h3></div>
+                    <div><h3>Reception</h3></div>
                 </div>
                 <div className="single-view">
-                    <div><h3>cabin for patient</h3></div>
+                    <div><h3>Cabin for patient</h3></div>
                     <div><img src={img2} alt="" /></div>
                 </div>
                 <div className="single-view">

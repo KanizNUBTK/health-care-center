@@ -25,3 +25,17 @@
     box-shadow: 2px 20px 10px 1px rgba(87, 80, 80, 0.2);
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+    .meet-doctors{
+        margin-left: 40px;
+        margin-right: 0;
+        width: 95%;
+    }
+    .doctors-details{
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-details{
+        width: 400px;
+    }
+}

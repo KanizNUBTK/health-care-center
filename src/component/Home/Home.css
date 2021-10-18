@@ -11,3 +11,15 @@
     font-weight: bold;
     color: rgb(75, 72, 72);
 }
+@media only screen and (max-width: 600px) {
+    .banner-img{
+        width: 420px;
+        height: 200px;
+    }
+    .first-part{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 50px;
+    }
+}
