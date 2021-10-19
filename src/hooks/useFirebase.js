@@ -26,14 +26,13 @@ const useFirebase = () => {
         const unsubscribed = onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user);
-                
             }
             else {
                 setUser({})
             }
             setIsLoading(false);
         });
-        return () => unsubscribed;
+        return unsubscribed;
     }, [])
 
     const logOut = () => {

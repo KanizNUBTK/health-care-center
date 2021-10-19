@@ -1,8 +1,10 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+    const {logOut,user} = useAuth();
     return (
         <div className="header">
             <h1>Central Hospital Khulna</h1>
@@ -11,8 +13,13 @@ const Header = () => {
             <Link to="/doctorsDetails">Doctors Details</Link>
             <Link to="/sevicesDetails">Service Details</Link>
             <Link to="/overView">Hospital OverView</Link>
-            <Link to="/login">Log In</Link>
-            <Link to="/register">Register</Link>
+            {
+                user?
+                <Link onClick={logOut} to="/login">log out</Link>
+                :
+                <Link to="/login">Log In</Link>
+            }
+           
             </nav>
         </div>
     );

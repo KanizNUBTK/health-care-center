@@ -16,7 +16,6 @@ const LogIn = () => {
                     <br />
                     <input className="submit-btn" type="submit" value="Submit" />
                 </form>
-                <p>New to CHK? <Link to="/register">Create Account</Link></p>
                 <div>
                     <button className="submit-btn" onClick={signInUsingGoogle}>Google Sign in</button>
                 </div>

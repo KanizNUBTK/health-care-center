@@ -10,7 +10,6 @@ import OverView from './component/OverView/OverView';
 import SingleDetails from './component/SingleDetails/SingleDetails';
 import AuthProvider from './Context/AuthProvider';
 import LogIn from './component/LogIn/LogIn';
-import Register from './component/Register/Register';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 function App() {
   return (
@@ -39,9 +38,6 @@ function App() {
          </Route>
          <Route exact path="/login">
            <LogIn></LogIn>
-         </Route>
-         <Route exact path="/register">
-           <Register></Register>
          </Route>
          <Route exact path ="*">
            <NotFound></NotFound>
