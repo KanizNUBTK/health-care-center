@@ -1,8 +1,9 @@
 import React from 'react';
 import './Service.css';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const{name,description,img}=props.service;
+    const{id,name,description,img}=props.service;
     return (
         <div className="service-part">
         <div>
@@ -11,7 +12,9 @@ const Service = (props) => {
         <div className="details-secsion">
            <h2>Service name: {name}</h2>
            <p>Service description: {description.slice(0,150)}...</p>
+           <Link to={`/singleDetails/${id}`}>
            <button className="details-btn">Show details</button>
+           </Link>
         </div>
         </div>
     );

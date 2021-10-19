@@ -7,26 +7,41 @@ import Footer from './component/Footer/Footer';
 import NotFound from './component/NotFound/NotFound';
 import ServiceDetails from './component/ServiceDetails/ServiceDetails';
 import OverView from './component/OverView/OverView';
+import SingleDetails from './component/SingleDetails/SingleDetails';
+import AuthProvider from './Context/AuthProvider';
+import LogIn from './component/LogIn/LogIn';
+import Register from './component/Register/Register';
+import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 function App() {
   return (
-    <div>
+   <div>
+     <AuthProvider>
      <Router>
        <Header></Header>
        <Switch>
          <Route exact path="/">
            <Home></Home>
          </Route>
-         <Route exact path="/home">
+         <Route path="/home">
            <Home></Home>
          </Route>
+         <PrivateRoute exact path="/singleDetails/:serviceId">
+           <SingleDetails></SingleDetails>
+         </PrivateRoute>
          <Route exact path="/doctorsDetails">
            <DoctorsDetails></DoctorsDetails>
          </Route>
-         <Route exact path="/sevicesDetails">
+         <PrivateRoute exact path="/sevicesDetails">
            <ServiceDetails></ServiceDetails>
-         </Route>
+         </PrivateRoute>
          <Route exact path="/overView">
            <OverView></OverView>
+         </Route>
+         <Route exact path="/login">
+           <LogIn></LogIn>
+         </Route>
+         <Route exact path="/register">
+           <Register></Register>
          </Route>
          <Route exact path ="*">
            <NotFound></NotFound>
@@ -34,7 +49,8 @@ function App() {
        </Switch>
        <Footer></Footer>
      </Router>
-    </div>
+     </AuthProvider>
+   </div>
   );
 }
 
