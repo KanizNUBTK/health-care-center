@@ -13,13 +13,13 @@
 }
 @media only screen and (max-width: 600px) {
     .banner-img{
-        width: 420px;
+        width: 360px;
         height: 200px;
     }
     .first-part{
         padding-top: 0;
         padding-bottom: 0;
         padding-right: 0;
-        padding-left: 50px;
+        padding-left: 0;
     }
 }

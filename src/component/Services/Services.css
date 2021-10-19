@@ -21,6 +21,7 @@
        grid-template-columns: repeat(1, 1fr);
    }
    .service-header{
-       width: 90%;
+       margin: 10px;
+       width: 80%;
    }
   }

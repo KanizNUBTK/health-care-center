@@ -21,7 +21,7 @@ span{
 }
 @media only screen and (max-width: 600px) {
     .details{
-        width: 420px;
+        width: 350px;
         margin-top: 0;
         margin-bottom: 0;
         margin-right: 0;
@@ -30,7 +30,7 @@ span{
         flex-wrap: wrap;
     }
     .details-img{
-        width: 400px;
+        width: 330px;
         height: 300px;
         padding: 10px;
         margin-top: 10px;

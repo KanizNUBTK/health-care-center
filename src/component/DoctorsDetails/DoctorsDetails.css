@@ -27,7 +27,7 @@
 }
 @media only screen and (max-width: 600px) {
     .meet-doctors{
-        margin-left: 40px;
+        margin-left: 0;
         margin-right: 0;
         width: 95%;
     }
@@ -36,6 +36,6 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .single-details{
-        width: 400px;
+        width: 330px;
     }
 }

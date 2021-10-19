@@ -7,7 +7,7 @@ const Header = () => {
     const {logOut,user} = useAuth();
     return (
         <div className="header">
-            <h1>Central Hospital Khulna</h1>
+            <div className="mobile-header"><h1>Central Hospital Khulna</h1></div>
             <nav className="nav-bar">
             <Link to="/home">Home</Link>
             <Link to="/doctorsDetails">Doctors Details</Link>

@@ -29,11 +29,22 @@
 }
 @media only screen and (max-width: 600px) {
     .header-text{
-        margin: 10px;
-        width: 400px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        width: 300px;
     }
     .inner-view{
-        margin: 0;
+        margin: 0px;
         grid-template-columns: repeat(1,1fr);
+    }
+    .single-view{
+        width: 300px;
+        padding: 0px;
+    }
+    .single-view img{
+        width: 295px;
+        padding: 0px;
     }
 }

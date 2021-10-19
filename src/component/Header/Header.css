@@ -24,7 +24,23 @@ h1{
     margin-right: 20px;
 }
 @media only screen and (max-width: 600px) {
-    .header{
-        width: 420px;
-    }
+  .header{
+      
+      flex-wrap: wrap;
+      height: 100px;
+  }
+  h1{
+    margin-left: 0;
+      font-size: 16px;
+  }
+  .nav-bar{
+      margin-top: -40px;
+      margin-right: 0;
+  }
+  .nav-bar a{
+      padding: 0;
+      margin-left: 5px;
+      margin-right: 7px;
+      font-size: 15px;
+  }
 }
