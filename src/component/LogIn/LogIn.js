@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import './LogIn.css';
 
 const LogIn = () => { 
-    const {signInUsingGoogle} = useAuth();
+    const {signInUsingGoogle,signInWithEmailAndPassword} = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_url =location.state?.from || '/home';
@@ -27,7 +27,7 @@ const LogIn = () => {
                     <br />
                     <input type="password" name="password" id="" placeholder="Enter Your Password"/>
                     <br />
-                    <input className="submit-btn" type="submit" value="Submit" />
+                    <input onClick={signInWithEmailAndPassword} className="submit-btn" type="submit" value="Submit" />
                 </form>
                 <div>
                     <button className="submit-btn" onClick={handleSingInGoogle}>Google Sign in</button>

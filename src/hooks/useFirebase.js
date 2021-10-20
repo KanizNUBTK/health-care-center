@@ -1,10 +1,12 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, signInWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
 import { useState, useEffect } from 'react';
 import authInit from "../Firebase/firebase.init";
 authInit();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
@@ -15,7 +17,16 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider);
            
     }
-  
+
+signInWithEmailAndPassword(auth, email, password)
+    .then(result => {
+         setEmail(result.email); 
+         setPassword(result.password);    
+     })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, user => {
             if (user) {
@@ -40,7 +51,9 @@ const useFirebase = () => {
         user,
         isLoading,
         signInUsingGoogle,
-        logOut
+        signInWithEmailAndPassword,
+        logOut,
+     
     }
 }
 
