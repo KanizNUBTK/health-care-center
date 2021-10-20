@@ -11,6 +11,7 @@ import SingleDetails from './component/SingleDetails/SingleDetails';
 import AuthProvider from './Context/AuthProvider';
 import LogIn from './component/LogIn/LogIn';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import AboutUs from './component/AboutUs/AboutUs';
 function App() {
   return (
    <div>
@@ -27,6 +28,9 @@ function App() {
          <PrivateRoute exact path="/singleDetails/:serviceId">
            <SingleDetails></SingleDetails>
          </PrivateRoute>
+         <Route exact path="/aboutUs">
+           <AboutUs></AboutUs>
+         </Route>
          <Route exact path="/doctorsDetails">
            <DoctorsDetails></DoctorsDetails>
          </Route>
