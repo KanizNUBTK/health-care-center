@@ -27,24 +27,29 @@
     width: 400px;
     height: 300px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
     .header-text{
-        margin-top: 0px;
+        margin-top: 10px;
         margin-left: 0px;
         margin-right: 0px;
-        padding: 0px;
-        width: 300px;
+        font-size: 24px;
     }
     .inner-view{
-        margin: 0px;
-        grid-template-columns: repeat(1,1fr);
+        margin: 20px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
     }
     .single-view{
-        width: 300px;
+        display: grid;
+        grid-template-columns: 2fr;
         padding: 0px;
+        border-radius: 10px;
+        box-shadow: 2px 20px 10px 1px rgba(87, 80, 80, 0.2);
     }
     .single-view img{
-        width: 295px;
-        padding: 0px;
+        width: 300px;
+        height: 200px;
     }
 }

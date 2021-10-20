@@ -2,6 +2,8 @@ import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+// import useFirebase from '../../hooks/useFirebase';
+
 
 const Header = () => {
     const {logOut,user} = useAuth();
@@ -13,8 +15,9 @@ const Header = () => {
             <Link to="/doctorsDetails">Doctors Details</Link>
             <Link to="/sevicesDetails">Service Details</Link>
             <Link to="/overView">Hospital OverView</Link>
+            <span>{user.displayName}</span>
             {
-                user?
+                user.email?
                 <Link onClick={logOut} to="/login">log out</Link>
                 :
                 <Link to="/login">Log In</Link>
